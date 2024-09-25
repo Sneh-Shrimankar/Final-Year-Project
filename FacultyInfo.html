@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>SAPV Faculty Info </title>
+	<meta charset="UTF-8"> 
+	<meta http-equiv="X-UA-Compatible"
+		content="IE=edge"> 
+	<meta name="viewport"
+		content="width=device-width, 
+				initial-scale=1.0"> 
+	<link rel="stylesheet"
+		href="style.css"> 
+	<link rel="stylesheet"
+		href="responsive.css"> 
+	<style type="text/css">
+		body{
+			
+			font-size: 13px;
+		}
+		  * {
+        box-sizing: border-box;
+    }
+
+    .container {
+        display: grid;
+        width: 90%;
+        margin: 40px auto;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 20px;
+        
+    }
+
+    .front img {
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;
+    }
+
+    .container1 {
+        position: relative;
+    }
+
+    .front h2 {
+        position: absolute;
+        top: 50%;
+        left: 30%;
+    }
+
+    .back {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: black;
+        color: white;
+        padding: 15px;
+        transform: perspective(600px) rotateY(180deg);
+        transition: transform .5s linear 0s;
+        backface-visibility: hidden;
+        border-radius: 10px;
+    }
+
+    .front {
+        color: white;
+        transform: perspective(600px) rotateY(0deg);
+        transition: transform .5s linear 0s;
+    }
+
+    .container1:hover>.front {
+        transform: perspective(600px) rotateY(-180deg);
+       /* cursor: pointer;*/
+    }
+
+    .container1:hover>.back {
+        transform: perspective(600px) rotateY(0deg);
+       /* cursor: pointer;*/
+	}
+	
+.image {
+  border: 5px solid #000;
+  border-radius: 10px;
+}
+
+h1{
+	font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	font-size: 50px;
+}
+
+
+
+header { 
+height: 99px; 
+width: 100vw; 
+padding: 0 30px; 
+background-color: var(--background-color1); 
+position:static; 
+z-index: 100; 
+box-shadow: 1px 1px 30px rgb(11, 0, 73); 
+display: flex; 
+justify-content: space-between; 
+align-items: center;
+}
+
+b{
+	color: var(--secondary-color);
+}
+
+.title{
+padding: 550px;
+align-items: center;
+display: flexbox;
+box-shadow: 1px 1px 30px rgb(0, 56, 146);
+}
+
+.logo { 
+font-size: 80px; 
+font-weight: 600; 
+color: rgb(47, 141, 70); 
+align-items: center;
+box-shadow: 1px 1px 30px rgb(0, 56, 146);
+} 
+
+.icn { 
+height: 70px;
+padding-right: 10px;
+} 
+.menuicn { 
+cursor: pointer; 
+} 
+
+
+.logosec { 
+display: flex;
+align-items: center;
+justify-content: center;
+padding-right: 1230px;
+border-radius: 100px;
+box-shadow: 1px 1px 10px rgb(0, 56, 146);
+}
+
+
+.circle { 
+height: 7px; 
+width: 7px; 
+position: absolute; 
+background-color: #fa7bb4; 
+border-radius: 50%; 
+left: 19px; 
+top: 8px; 
+} 
+
+</style>
+	
+</head>
+<body>
+
+<!-- for header part -->
+<header class="animated-header"> 
+    <div class="logosec"> 
+        <div class="logo"></div> 
+        <a href="dashboard.html"><img src= 
+"Logo-removebg-preview.png"
+            class="icn menuicn"
+            id="menuicn"
+            alt="menu-icon"> </a>
+            
+            <div class="h1">
+                <h1>Sheth Anandilal Podar Vidyalaya , Santacruz (W)</h1>
+                </div>
+    </div> 
+</header> 
+
+
+	<div class="container">
+		<div class = "container1">
+			<div class= "front">
+				<h3 style="color:Black;">Mr. Ajaykumar.S.Singh</h3>
+                <div class="image"><img src="images/logo.png" ></div>
+				
+					
+			</div>
+			
+			<div class="back">
+				<h2 style="color:#50C4ED">Name: </h2>
+					<h2> Mr. Ajaykumar.S.Singh</h2>
+				<h2 style="color:#50C4ED">Designation: <h2> 
+					<h3>Headmaster</h3>
+				<h2 style="color:#50C4ED">Qualification:</h2> 
+					<h3>B.SC.B.Ed</h3>
+			</div>
+		</div>
+		
+		<div class = "container1">
+			<div class= "front">
+				<h3 style="color:Black;">Mr. Rajesh.R.Singh</h3>
+				<div class="image"><img src="imgs/12.png" ></div>
+					
+			</div>
+			
+			<div class="back">
+				<h2 style="color:#50C4ED">Name: </h2>
+					<h2> Mr. Rajesh.R.Singh</h2>
+				<h2 style="color:#50C4ED">Designation: <h2> 
+					<h3>Supervisor, Asst.Tr</h3>
+				<h2 style="color:#50C4ED">Qualification:</h2> 
+					<h3>B.A.B.P.Ed</h3>
+			</div>
+		</div>
+		
+		<div class = "container1">
+			<div class= "front">
+				<h3 style="color:Black;">Mr. K.D.Tiwari</h3>
+				<div class="image"><img src="imgs/6.png" ></div>
+					
+			</div>
+			
+			<div class="back">
+				<h2 style="color:#50C4ED">Name: </h2>
+					<h2> Mr. K.D.Tiwari</h2>
+				<h2 style="color:#50C4ED">Designation: <h2> 
+					<h3>Asst.Tr</h3>
+				<h2 style="color:#50C4ED">Qualification:</h2> 
+					<h3>B.SC.BEd</h3>
+			</div>
+		</div>
+		
+		<div class = "container1">
+			<div class= "front">
+				<h3 style="color:Black;">Mrs. Shusheela.V.Pal</h3>
+				<div class="image"><img src="imgs/11.png" ></div>
+			</div>
+			
+			<div class="back">
+				<h2 style="color:#50C4ED">Name: </h2>
+					<h2> Mrs. Shushila.V.Pal</h2>
+				<h2 style="color:#50C4ED">Designation: <h2> 
+					<h3>Asst.Tr</h3>
+				<h2 style="color:#50C4ED">Qualification:</h2> 
+					<h3>M.A.BEd</v>
+			</div>
+		</div>
+	
+	</div>
+
+
+	<div class="container">
+		<div class = "container1">
+			<div class= "front">
+				<h3 style="color:Black;">Mr. Sanjay.M.Dubey</h3>
+				<div class="image"><img src="imgs/14.png" ></div>
+					
+			</div>
+			
+			<div class="back">
+				<h2 style="color:#50C4ED">Name: </h2>
+					<h2> Mr. Sanjay.M.Dubey</h2>
+				<h2 style="color:#50C4ED">Designation: <h2> 
+					<h3>Asst.Tr</h3>
+				<h2 style="color:#50C4ED">Qualification:</h2> 
+					<h3>B.SC.B.Ed</h3>
+			</div>
+		</div>
+		
+		<div class = "container1">
+			<div class= "front">
+				<h3 style="color:Black;">Mr. Murarilal.D.Yadav</h3>
+				<div class="image"><img src="imgs/17.png" ></div>
+					
+			</div>
+			
+			<div class="back">
+				<h2 style="color:#50C4ED">Name: </h2>
+					<h2> Mr. Murarilal.D.Yadav</h2>
+				<h2 style="color:#50C4ED">Designation: <h2> 
+					<h3>Asst.Tr</h3>
+				<h2 style="color:#50C4ED">Qualification:</h2> 
+					<h3>M.SC.M.Ed</h3>
+			</div>
+		</div>
+		
+		<div class = "container1">
+			<div class= "front">
+				<h3 style="color:Black;">Mrs. Manali.V.Singh</h3>
+				<div class="image"><img src="imgs/15.png" ></div>
+					
+			</div>
+			
+			<div class="back">
+				<h2 style="color:#50C4ED">Name: </h2>
+					<h2> Mrs. Manali.V.Singh</h2>
+				<h2 style="color:#50C4ED">Designation: <h2> 
+					<h3>Asst.Tr</h3>
+				<h2 style="color:#50C4ED">Qualification:</h2> 
+					<h3>B.A.BEd</h3>
+			</div>
+		</div>
+		
+		<div class = "container1">
+			<div class= "front">
+				<h3 style="color:Black;">Mrs. Vaishali.A.Amberkar</h3>
+				<div class="image"><img src="imgs/5.png" ></div>
+			</div>
+			
+			<div class="back">
+				<h2 style="color:#50C4ED">Name: </h2>
+					<h2>Mrs.Vaishali.A.Ambekar</h2>
+				<h2 style="color:#50C4ED">Designation: <h2> 
+					<h3>Asst.Tr</h3>
+				<h2 style="color:#50C4ED">Qualification:</h2> 
+					<h3>M.SC.B.Ed</h3>
+			</div>
+		</div>
+	
+	</div>
+
+
+	<div class="container">
+		<div class = "container1">
+			<div class= "front">
+				<h3 style="color:Black;">Mrs. Akhilesh.T.Singh</h3>
+				<div class="image"><img src="imgs/13.png" ></div>
+					
+			</div>
+			
+			<div class="back">
+				<h2 style="color:#50C4ED">Name: </h2>
+					<h2>Mrs.Akhilesh.T.Singh</h2>
+				<h2 style="color:#50C4ED">Designation: <h2> 
+					<h3>Asst.Tr</h3>
+				<h2 style="color:#50C4ED">Qualification:</h2> 
+					<h3>M.SC.B.Ed</h3>
+			</div>
+		</div>
+		
+		<div class = "container1">
+			<div class= "front">
+				<h3 style="color:Black;">Mrs. Vibha.N.Dubey</h3>
+				<div class="image"><img src="imgs/21.png" ></div>
+					
+			</div>
+			
+			<div class="back">
+				<h2 style="color:#50C4ED">Name: </h2>
+					<h2>Mrs.Vibha.N.Dubey</h2>
+				<h2 style="color:#50C4ED">Designation: <h2> 
+					<h3>Asst.Tr</h3>
+				<h2 style="color:#50C4ED">Qualification:</h2> 
+					<h3>M.A.B.Ed</h3>
+			</div>
+		</div>
+		
+		<div class = "container1">
+			<div class= "front">
+				<h3 style="color:Black;">Mr. Sanjeev Kumar</h3>
+				<div class="image"><img src="images/logo.png" ></div>
+					
+			</div>
+			
+			<div class="back">
+				<h2 style="color:#50C4ED">Name: </h2>
+					<h2>Mr.Sanjeev Kumar</h2>
+				<h2 style="color:#50C4ED">Designation: <h2> 
+					<h3>Asst.Tr</h3>
+				<h2 style="color:#50C4ED">Qualification:</h2> 
+					<h3>S.S.C.Music</h3>
+			</div>
+		</div>
+		
+		<div class = "container1">
+			<div class= "front">
+				<h3 style="color:Black;">Mrs. Anita.P.Mishra</h3>
+				<div class="image"><img src="imgs/7.png" ></div>
+			</div>
+			
+			<div class="back">
+				<h2 style="color:#50C4ED">Name: </h2>
+					<h2>Mrs.Anita.P.Mishra</h2>
+				<h2 style="color:#50C4ED">Designation: <h2> 
+					<h3>Asst.Tr</h3>
+				<h2 style="color:#50C4ED">Qualification:</h2> 
+					<h3>B.A.D.Ed</h3>
+			</div>
+		</div>
+	
+	</div>
+
+
+	<div class="container">
+		<div class = "container1">
+			<div class= "front">
+				<h3 style="color:Black;">Mrs. Sujata.S.Bhide</h3>
+				<div class="image"><img src="imgs/4.png" ></div>
+					
+			</div>
+			
+			<div class="back">
+				<h2 style="color:#50C4ED">Name: </h2>
+					<h2>Mrs.Sujata.S.Bhide</h2>
+				<h2 style="color:#50C4ED">Designation: <h2> 
+					<h3>Asst.Tr</h3>
+				<h2 style="color:#50C4ED">Qualification:</h2> 
+					<h3>B.A.D.Ed</h3>
+			</div>
+		</div>
+		
+		<div class = "container1">
+			<div class= "front">
+				<h3 style="color:Black;">Mrs. Ketna.M.Gor</h3>
+				<div class="image"><img src="imgs/18.png" ></div>
+					
+			</div>
+			
+			<div class="back">
+				<h2 style="color:#50C4ED">Name: </h2>
+					<h2>Mrs.Ketna.M.Gor</h2>
+				<h2 style="color:#50C4ED">Designation: <h2> 
+					<h3>Asst.Tr</h3>
+				<h2 style="color:#50C4ED">Qualification:</h2> 
+					<h3>B.A.D.Ed</h3>
+			</div>
+		</div>
+		
+		<div class = "container1">
+			<div class= "front">
+				<h3 style="color:Black;">Mrs. Leena.S.Tripathi</h3>
+				<div class="image"><img src="imgs/19.png" ></div>
+					
+			</div>
+			
+			<div class="back">
+				<h2 style="color:#50C4ED">Name: </h2>
+					<h2>Mrs.Leena.S.Tripathi</h2>
+				<h2 style="color:#50C4ED">Designation: <h2> 
+					<h3>Asst.Tr</h3>
+				<h2 style="color:#50C4ED">Qualification:</h2> 
+					<h3>B.A.D.Ed</h3>
+			</div>
+		</div>
+		
+		<div class = "container1">
+			<div class= "front">
+				<h3 style="color:Black;">Mrs. Shweta.P.Pandey</h3>
+				<div class="image"><img src="imgs/8.png" ></div>
+			</div>
+			
+			<div class="back">
+				<h2 style="color:#50C4ED">Name: </h2>
+					<h2>Mrs.Shweta.P.Pandey</h2>
+				<h2 style="color:#50C4ED">Designation: <h2> 
+					<h3>Asst.Tr</h3>
+				<h2 style="color:#50C4ED">Qualification:</h2> 
+					<h3>M.A.D.Ed</h3>
+			</div>
+		</div>
+	
+	</div>
+
+	<div class="container">
+		<div class = "container1">
+			<div class= "front">
+				<h3 style="color:Black;">Mrs. Anurag.A.Singh</h3>
+				<div class="image"><img src="imgs/3.png" ></div>
+					
+			</div>
+			
+			<div class="back">
+				<h2 style="color:#50C4ED">Name: </h2>
+					<h2>Mrs.Anurag.A.Singh</h2>
+				<h2 style="color:#50C4ED">Designation: <h2> 
+					<h3>Asst.Tr</h3>
+				<h2 style="color:#50C4ED">Qualification:</h2> 
+					<h3>M.A.D.Ed</h3>
+			</div>
+		</div>
+
+		<div class = "container1">
+			<div class= "front">
+				<h3 style="color:Black;">Mrs. Archana.A.Paraye</h3>
+				<div class="image"><img src="imgs/16.png" ></div>
+					
+			</div>
+			
+			<div class="back">
+				<h2 style="color:#50C4ED">Name: </h2>
+					<h2>Mrs.Archana.A.Paraye</h2>
+				<h2 style="color:#50C4ED">Designation: <h2> 
+					<h3>Asst.Tr</h3>
+				<h2 style="color:#50C4ED">Qualification:</h2> 
+					<h3>B.A.B.Ed</h3>
+			</div>
+		</div>
+
+		<div class = "container1">
+			<div class= "front">
+				<h3 style="color:Black;">Mr. Kamlesh.R.Tiwari</h3>
+				<div class="image"><img src="imgs/20.png" ></div>
+					
+			</div>
+			
+			<div class="back">
+				<h2 style="color:#50C4ED">Name: </h2>
+					<h2>Mr.Kamlesh.R.Tiwari</h2>
+				<h2 style="color:#50C4ED">Designation: <h2> 
+					<h3>Asst.Tr</h3>
+				<h2 style="color:#50C4ED">Qualification:</h2> 
+					<h3>M.A.M.Ed</h3>
+			</div>
+		</div>
+
+		<div class = "container1">
+			<div class= "front">
+				<h3 style="color:Black;">Mr. Poonam.S.Saroj</h3>
+				<div class="image"><img src="imgs/10.png" ></div>
+					
+			</div>
+			
+			<div class="back">
+				<h2 style="color:#50C4ED">Name: </h2>
+					<h2>Mr.Poonam.S.Saroj</h2>
+				<h2 style="color:#50C4ED">Designation: <h2> 
+					<h3>Asst.Tr</h3>
+				<h2 style="color:#50C4ED">Qualification:</h2> 
+					<h3>B.SC.Ed</h3>
+			</div>
+		</div>
+	</div>
+
+	<div class="container">
+		<div class = "container1">
+			<div class= "front">
+				<h3 style="color:Black;">Mrs. Ragini.P.Patil</h3>
+				<div class="image"><img src="imgs/2.png" ></div>
+					
+			</div>
+			
+			<div class="back">
+				<h2 style="color:#50C4ED">Name: </h2>
+					<h2>Mrs.Ragini.P.Patil</h2>
+				<h2 style="color:#50C4ED">Designation: <h2> 
+					<h3>Asst.Tr</h3>
+				<h2 style="color:#50C4ED">Qualification:</h2> 
+					<h3>B.Com BPEd</h3>
+			</div>
+		</div>
+
+		<div class = "container1">
+			<div class= "front">
+				<h3 style="color:Black;">Mrs. Varsha.R.Zawar</h3>
+				<div class="image"><img src="imgs/9.png" ></div>
+					
+			</div>
+			
+			<div class="back">
+				<h2 style="color:#50C4ED">Name: </h2>
+					<h2>Mrs.Varsha.R.Zawar</h2>
+				<h2 style="color:#50C4ED">Designation: <h2> 
+					<h3>Asst.Tr</h3>
+				<h2 style="color:#50C4ED">Qualification:</h2> 
+					<h3>B.SC.BEd</h3>
+			</div>
+		</div>
+
+		<div class = "container1">
+			<div class= "front">
+				<h3 style="color:Black;">Mrs. Kiran.A.Pandey</h3>
+				<div class="image"><img src="imgs/1.png" ></div>
+					
+			</div>
+			
+			<div class="back">
+				<h2 style="color:#50C4ED">Name: </h2>
+					<h2>Mrs.Kiran.A.Pandey</h2>
+				<h2 style="color:#50C4ED">Designation: <h2> 
+					<h3>Asst.Tr</h3>
+				<h2 style="color:#50C4ED">Qualification:</h2> 
+					<h3>M.A.D.Ed</h3>
+			</div>
+		</div>
+
+		<div class = "container1">
+			<div class= "front">
+				<h3 style="color:Black;">Mr. Dhanaji.G.Khade</h3>
+				<div class="image"><img src="images/logo.png" ></div>
+					
+			</div>
+			
+			<div class="back">
+				<h2 style="color:#50C4ED">Name: </h2>
+					<h2>Mr.Dhanaji.G.Khade</h2>
+				<h2 style="color:#50C4ED">Designation: <h2> 
+					<h3>Asst.Tr</h3>
+				<h2 style="color:#50C4ED">Qualification:</h2> 
+					<h3>H.S.C.A.M</h3>
+			</div>
+		</div>
+	</div>
+
+	<div class="container">
+		<div class = "container1">
+			<div class= "front">
+				<h3 style="color:Black;">Mr. Sunilkumar.A.Mishra</h3>
+				<div class="image"><img src="images/logo.png" ></div>
+					
+			</div>
+			
+			<div class="back">
+				<h2 style="color:#50C4ED">Name: </h2>
+					<h2>Mr.Sunilkumar.A.Mishra</h2>
+				<h2 style="color:#50C4ED">Designation: <h2> 
+					<h3>Asst.Tr</h3>
+				<h2 style="color:#50C4ED">Qualification:</h2> 
+					<h3>B.SC. B.Ed</h3>
+			</div>
+		</div>
+	</div>
+
+
+</body>
+</html>
